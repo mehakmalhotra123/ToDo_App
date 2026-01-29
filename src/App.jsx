@@ -69,7 +69,7 @@ const handleChechBox = (index)=>{
               <div className={item.isCompleted ? "line-through text-red-700 font-bold text-2xl" : "text-2xl "}>
 
                 <input onChange={() => handleChechBox(index)}
-                 checked={todo.isCompleted} 
+                 checked={item.isCompleted} 
                  type='checkbox' className='mx-4' />
                 
                 {item.todo}
